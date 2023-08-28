@@ -32,8 +32,7 @@ Group by Location, Population
 Order by PercentPopulationInfected desc
 
 
---#4. Shows When and Where Highest Population Infected Rates Occurred 
-	--For visualization: Shows rolling Percent Population Infected
+--#4. Shows rolling Percent Population Infected
 
 Select Location, Population, Date, MAX(total_cases) as HighestInfectionCount, MAX((total_cases/population))*100 as PercentPopulationInfected
 From CovidDeaths$
